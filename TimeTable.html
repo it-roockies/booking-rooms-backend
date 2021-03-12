@@ -1,16 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>TTPU Time Table</title>
     <link rel="stylesheet" href="TimeTable.css">
+    <link rel="stylesheet" href="uicons-regular-rounded/css/uicons-regular-rounded.css">
 </head>
 
 <body>
-        <table border="1">
+<div id="main">
+
+    <div id="block_one_left">
+        <fieldset>
+            <legend>Log in</legend>
+            <p><label for="name">Enter Login:</label></p>
+            <p><input type="text" id="name"></p>
+            <p><label for="password">Enter Password:</label></p>
+            <p><input type="password" id="password"></p>
+        </fieldset>
+    </div>
+
+    <div id="block_one_right">
+    </div>
+
+    <div id="block_two">
+        <label id="text">TTPU Time Table</label>
+    </div>
+
+    <div id="radio">
+        <h3>Choose the floor</h3>
+        <input id="radio_one" class="radio" type="radio" name="radio" value="first_floor">
+        <label class="radio_img" for="radio_one">
+            <div class="radio_block"></div>
+        </label>
+        <input id="radio_two" class="radio" type="radio" name="radio" value="second_floor">
+        <label class="radio_img" for="radio_two">
+            <div class="radio_block"></div>
+        </label>
+        <input id="radio_three" class="radio" type="radio" name="radio" value="third_floor">
+        <label class="radio_img" for="radio_three">
+            <div class="radio_block"></div>
+        </label>
+        <input id="radio_four" class="radio" type="radio" name="radio" value="fourth_floor">
+        <label class="radio_img" for="radio_four">
+            <div class="radio_block"></div>
+        </label>
+    </div>
+
+    <div id="block_three">
+        <table>
             <thead>
-            <tr>
-                <th>Day of the Week</th>
+            <tr id="time">
+                <th id="first_th">
+                    <nobr>Day of the Week</nobr>
+                </th>
                 <th>Time</th>
                 <th>101</th>
                 <th>102</th>
@@ -18,16 +61,49 @@
                 <th>104</th>
                 <th>105</th>
                 <th>106</th>
-                <th>107</th>
+                <th id="last_th">107</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td rowspan="8"><b>Monday</b></td>
+                <td class="gg" rowspan="8"><b>Monday</b></td>
             </tr>
             <tr>
                 <td>09:00-10:00</td>
-                <td id="kere"></td>
+                <td>
+                    <select>
+                        <option label="PY">
+                        </option>
+                        <option label="1st">
+                        </option>
+                        <option label="2nd">
+                        </option>
+                        <option label="3rd">
+                        </option>
+                    </select>
+                    <select>
+                        <optgroup label="Subject"></optgroup>
+                        <option label="Chemistry">
+                        </option>
+                        <option label="Physics">
+                        </option>
+                        <option label="Math Analyse">
+                        </option>
+                        <option label="Linear Algebra">
+                        </option>
+                    </select>
+                    <select>
+                        <optgroup label="Professor"></optgroup>
+                        <option label="Emila Musso">
+                        </option>
+                        <option label="Fibio Radrigo">
+                        </option>
+                        <option label="Leo Carleone">
+                        </option>
+                        <option label="Barbara Hugh">
+                        </option>
+                    </select>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -98,7 +174,7 @@
             </tbody>
             <tbody>
             <tr>
-                <td rowspan="8"><b>Tuesday</b></td>
+                <td class="gg" rowspan="8"><b>Tuesday</b></td>
             </tr>
             <tr>
                 <td>09:00-10:00</td>
@@ -172,7 +248,7 @@
             </tr>
             </tbody>
             <tr>
-                <td rowspan="8"><b>Wednesday</b></td>
+                <td class="gg" rowspan="8"><b>Wednesday</b></td>
             </tr>
             <tr>
                 <td>09:00-10:00</td>
@@ -246,82 +322,7 @@
             </tr>
             </tbody>
             <tr>
-                <td rowspan="8"><b>Thursday</b></td>
-            </tr>
-            <tr>
-                <td>09:00-10:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>10:20-11:20</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>12:00-13:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>13:20-14:20</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>14:40-15:40</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>16:00-17:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>17:00-18:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            </tbody>
-            <tr>
-                <td rowspan="8"><b>Friday</b></td>
+                <td class="gg" rowspan="8"><b>Thursday</b></td>
             </tr>
             <tr>
                 <td>09:00-10:00</td>
@@ -395,7 +396,7 @@
             </tr>
             </tbody>
             <tr>
-                <td rowspan="8"><b>Saturday</b></td>
+                <td class="gg" rowspan="8"><b>Friday</b></td>
             </tr>
             <tr>
                 <td>09:00-10:00</td>
@@ -466,9 +467,93 @@
                 <td></td>
                 <td></td>
                 <td></td>
+            </tr>
+            </tbody>
+            <tr>
+                <td class="gg" id="first_td" rowspan="8"><b>Saturday</b></td>
+            </tr>
+            <tr>
+                <td>09:00-10:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10:20-11:20</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>12:00-13:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>13:20-14:20</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>14:40-15:40</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16:00-17:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>17:00-18:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="last_td"></td>
             </tr>
             </tbody>
         </table>
-<script src="TimeTable.js"></script>
+    </div>
+    <div id="block_four">
+        <a>
+            <button id="button_one">Save</button>
+        </a>
+        <a>
+            <button id="button_two">Reset</button>
+        </a>
+    </div>
+    <script src="TimeTable.js"></script>
+</div>
 </body>
 </html>
